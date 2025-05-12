@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace УправлениеПутешествиями
@@ -14,9 +11,8 @@ namespace УправлениеПутешествиями
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.EnableVisualStyles(); Application.SetCompatibleTextRenderingDefault(false);
+            var trip = new Trip("Париж", DateTime.Now, DateTime.Now.AddDays(7), 50000m); Application.Run(new TripForm(trip));
         }
     }
 }

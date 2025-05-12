@@ -1,6 +1,6 @@
 ﻿namespace УправлениеПутешествиями
 {
-    partial class Form1
+    partial class TripForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
